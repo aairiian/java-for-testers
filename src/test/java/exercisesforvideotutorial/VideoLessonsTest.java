@@ -9,11 +9,11 @@ public class VideoLessonsTest {
     @Test
     public void charAndBoolean () {
         char copyRightSymbol = '\u00a9';
-        assertEquals ("Copyright symbol", "©", Character.toString(copyRightSymbol));
+        assertEquals ("Copyright symbol", "\u00a9", Character.toString(copyRightSymbol));
         System.out.println("Unicode output was = " + copyRightSymbol);
 
         char registeredSymbol = '\u00ae';
-        assertEquals ("Registered Symbol", "®", Character.toString(registeredSymbol));
+        assertEquals ("Registered Symbol", "\u00ae", Character.toString(registeredSymbol));
         System.out.println("Registered symbol = " + registeredSymbol);
 
         char rightFacingArmenianEternitySign = '\u058d';
