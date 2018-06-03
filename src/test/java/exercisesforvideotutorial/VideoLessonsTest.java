@@ -14,11 +14,11 @@ public class VideoLessonsTest {
 
         char registeredSymbol = '\u00ae';
         assertEquals ("Registered Symbol", "®", Character.toString(registeredSymbol));
-        System.out.println("Registered symbol = " +registeredSymbol);
+        System.out.println("Registered symbol = " + registeredSymbol);
 
         char rightFacingArmenianEternitySign = '\u058d';
         assertEquals("Armenian Eternity Sing", "\u058D", Character.toString(rightFacingArmenianEternitySign));
-        System.out.println("Armenian Eternity Sing:" +rightFacingArmenianEternitySign);
+        System.out.println("Armenian Eternity Sing:" + rightFacingArmenianEternitySign);
 
         boolean myBoolean = false;
         boolean myMale = true;
