@@ -27,7 +27,7 @@ public class TestAppEnvironment {
 /*/ Return domain object use constant field*/
     @Test
     public void canGetDomainFromField (){
-        assertEquals("Return DOMAIN from constant field", "http://127.0.0.1", TestAppEnv.DOMAIN);
+        assertEquals("Return DOMAIN from constant field", "127.0.0.1", TestAppEnv.DOMAIN);
         System.out.println("Return DOMAIN from constant field " + TestAppEnv.DOMAIN);
     }
 
