@@ -24,7 +24,7 @@ public class TestAppEnvironment {
         assertEquals("Returns Port", "4723", TestAppEnv.getPort());
         System.out.println("Returns Port is " + TestAppEnv.getPort());
     }
-
+/*/ Return domain object use constant field*/
     @Test
     public void canGetDomainFromField (){
         assertEquals("Return DOMAIN from constant field", "http://127.0.0.1", TestAppEnv.DOMAIN);
