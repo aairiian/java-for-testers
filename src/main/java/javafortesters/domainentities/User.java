@@ -2,12 +2,19 @@ package javafortesters.domainentities;
 
 public class User {
 
+    private String username;
+    private String password;
 
-    public String getUsername (){
-        return "sudo";
+    public User (){
+        username = "username";
+        password = "password";
     }
 
-    public String getPassword (){
-        return "qweqwe";
+    public String getUsername () {
+        return "username";
+    }
+
+    public String getPassword() {
+        return "password";
     }
 }

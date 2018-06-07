@@ -5,17 +5,19 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+
+
 public class UserTest {
 
     @Test
-    public void canConstractANewUser (){
+    public void userHasDefaultUsernameAndPassword() {
 
         User user = new User();
+        assertEquals("Default username is expected", "username", user.getUsername());
+        System.out.println("Default username is expected: " +user.getUsername());
 
-         assertEquals("Return default username", "sudo", user.getUsername());
-        System.out.println("Username = " + user.getUsername());
+        assertEquals("Default password is expected ", "password", user.getPassword());
+        System.out.println("Default password is expected: " + user.getPassword());
 
-         assertEquals( "Return default password", "qweqwe", user.getPassword());
-        System.out.println("Password = " + user.getPassword());
     }
 }
