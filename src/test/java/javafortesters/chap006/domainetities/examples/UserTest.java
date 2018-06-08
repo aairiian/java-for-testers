@@ -14,10 +14,28 @@ public class UserTest {
 
         User user = new User();
         assertEquals("Default username is expected", "username", user.getUsername());
-        System.out.println("Default username is expected: " +user.getUsername());
+        System.out.println("Default username is expected: " + user.getUsername());
 
         assertEquals("Default password is expected ", "password", user.getPassword());
         System.out.println("Default password is expected: " + user.getPassword());
 
     }
+
+    @Test
+    public void userHasNotDefaultUsername() {
+
+        User sudo = new User();
+        sudo.username = "sudo";
+        assertEquals("Username is sudo", "sudo", sudo.username);
+        System.out.println("Username = " + sudo.username);
+    }
+
+    @Test
+    public void userConstractWithArguments() {
+         User user = new User ("binbash", "qweqwe");
+         assertEquals("return real credentials", "binbash", user.username);
+
+    }
+
+
 }
