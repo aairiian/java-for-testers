@@ -10,17 +10,18 @@ public class User {
         password = "password";
     }
 
-    public User (String binbash, String password) {
+    public  User (String binbash, String password) {
         this.username = binbash;
         this.password = password;
     }
 
     public String getUsername () {
-        return "username";
+        return this.username;
     }
 
     public String getPassword() {
-
-        return "password";
+        return this.password;
     }
+
 }
+

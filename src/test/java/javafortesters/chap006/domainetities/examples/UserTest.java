@@ -33,8 +33,11 @@ public class UserTest {
     @Test
     public void userConstractWithArguments() {
 
-         User user = new User ();
-         assertEquals("return real credentials", "binbash", user.getUsername());
+        User user = new User ("binbash", "qweqwe");
+        assertEquals("Return real credentials", "binbash", user.getUsername());
+        assertEquals("Return real password ", "qweqwe", user.getPassword());
+        System.out.println("Real username is " + user.getUsername());
+        System.out.println("Real password is " + user.getPassword());
 
     }
 
