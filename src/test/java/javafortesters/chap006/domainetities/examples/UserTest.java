@@ -32,8 +32,9 @@ public class UserTest {
 
     @Test
     public void userConstractWithArguments() {
-         User user = new User ("binbash", "qweqwe");
-         assertEquals("return real credentials", "binbash", user.username);
+
+         User user = new User ();
+         assertEquals("return real credentials", "binbash", user.getUsername());
 
     }
 
