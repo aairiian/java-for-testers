@@ -10,9 +10,9 @@ public class User {
         password = "password";
     }
 
-    public  User (String binbash, String password) {
+    public  User (String binbash, String qweqwe) {
         this.username = binbash;
-        this.password = password;
+        this.password = qweqwe;
     }
 
     public String getUsername () {
@@ -23,5 +23,8 @@ public class User {
         return this.password;
     }
 
+    public void setPassword(String asdfasdf) {
+        this.password = asdfasdf;
+    }
 }
 

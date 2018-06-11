@@ -22,12 +22,21 @@ public class UserTest {
     }
 
     @Test
-    public void userHasNotDefaultUsername() {
+    public void canConstructWithUsername() {
 
         User sudo = new User();
         sudo.username = "sudo";
         assertEquals("Username is sudo", "sudo", sudo.username);
-        System.out.println("Username = " + sudo.username);
+        System.out.println("Username  = " + sudo.username);
+    }
+
+    @Test
+    public void canSetNameToInvalidValue(){
+
+        User sudo = new User();
+        sudo.username = "12@$%";
+        assertEquals("Invalid username", "12@$%", sudo.username);
+        System.out.println("Invalid username " + sudo.username);
     }
 
     @Test
@@ -39,6 +48,14 @@ public class UserTest {
         System.out.println("Real username is " + user.getUsername());
         System.out.println("Real password is " + user.getPassword());
 
+    }
+
+    @Test
+    public void canSetPasswordAfterConstructed(){
+        User user = new User();
+        user.setPassword("asdfasdf");
+        assertEquals("setter password is expected", "asdfasdf", user.getPassword());
+        System.out.println("Setter password is expected: " + user.getPassword());
     }
 
 
