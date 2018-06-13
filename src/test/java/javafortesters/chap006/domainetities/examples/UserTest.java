@@ -49,13 +49,31 @@ public class UserTest {
         System.out.println("Real password is " + user.getPassword());
 
     }
-
+/* Setter method / */
     @Test
     public void canSetPasswordAfterConstructed(){
         User user = new User();
         user.setPassword("asdfasdf");
         assertEquals("setter password is expected", "asdfasdf", user.getPassword());
         System.out.println("Setter password is expected: " + user.getPassword());
+    }
+/* Use length method to check count characters username  / */
+    @Test
+    public void canReturnLengthUsername(){
+        User user = new User();
+        user.username = "boboss";
+        assertEquals("return username length = 6 characters", 6, user.username.length());
+        System.out.println("Return username length = " + user.username.length());
+    }
+
+    /* Use length method to check count characters password  / */
+
+    @Test
+    public void canReturnLengthPassword(){
+        User user = new User();
+        user.password = "qweqwe";
+        assertEquals("Return password length = 6 characters", 6, user.password.length());
+        System.out.println("return password length = " + user.password.length());
     }
 
 
