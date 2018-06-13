@@ -19,6 +19,13 @@ public class UserTest {
         assertEquals("Default password is expected ", "password", user.getPassword());
         System.out.println("Default password is expected: " + user.getPassword());
 
+        /* check length username and password */
+        assertEquals("Length of useername", 8, user.getUsername().length());
+        System.out.println("length of username = " + user.getUsername().length());
+        assertEquals("Length of password", 8, user.getPassword().length());
+        System.out.println("Length of password = " + user.getPassword().length());
+
+
     }
 
     @Test
@@ -56,6 +63,8 @@ public class UserTest {
         user.setPassword("asdfasdf");
         assertEquals("setter password is expected", "asdfasdf", user.getPassword());
         System.out.println("Setter password is expected: " + user.getPassword());
+        assertEquals("check length parameters", 8, user.getPassword().length());
+        System.out.println("length of getpassword = " + user.getPassword().length());
     }
 /* Use length method to check count characters username  / */
     @Test
@@ -75,6 +84,15 @@ public class UserTest {
         assertEquals("Return password length = 6 characters", 6, user.password.length());
         System.out.println("return password length = " + user.password.length());
     }
+
+    @Test
+    public void canANewStringGetter(){
+        User user = new User();
+        System.out.println("return search result " + user.getSearchers());
+        assertEquals("return search keyword", "parliament", user.getSearchers());
+        assertEquals("return search keyword length", 10, user.getSearchers().length());
+    }
+
 
 
 }
